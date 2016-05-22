@@ -5,6 +5,6 @@
  2. You can also quickly insert and delete data from a binary tree as 
  opposed to an array.
  3. eg A company's org chart is a tree.
- 4 Root node is a level 0
- 5 Children are at level 1
+ 4. Root node is a level 0
+ 5. Children are at level 1
  
