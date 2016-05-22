@@ -1,0 +1,25 @@
+{
+  "name": "datastructures",
+  "version": "1.0.0",
+  "description": "Jasmine test libraries that will be used to write tests for the projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sushmeet/algorithmsInJavaScript.git"
+  },
+  "keywords": [
+    "fun"
+  ],
+  "author": "Sushmeet Sunger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sushmeet/algorithmsInJavaScript/issues"
+  },
+  "homepage": "https://github.com/Sushmeet/algorithmsInJavaScript#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}

@@ -25,7 +25,9 @@ var sushTree = new BST();
 
 
 var sushKebab = new BST();
-//sushKebab.insert(5);
+sushKebab.insert(5);
+// sushKebab.insert(5);
+console.log(sushKebab);
 console.log(sushKebab.search(5));
 
 
