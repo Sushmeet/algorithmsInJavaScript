@@ -28,9 +28,10 @@ function insert(element) {
                 current = current.right;
             }
             else {
-                return false;
+                return false; // Duplicate node not inserted.
             }
         }
+        // create new node and attach it to the parent node.
         if (element < parent.element) {
             parent.left = new Node(element);
         }
