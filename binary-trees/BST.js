@@ -16,25 +16,29 @@ function insert(element) {
     }
     else {
         var current = this.root;
+        var parent;
 
-        while (current) {
+        while (current !== null) {
             if (element < current.element) {
-                if (current.left == null) {
-                    current.left = new Node(element);
-                    break;
-                }
-                else current = current.left;
+                parent = current;
+                current = current.left;
             }
-
             else if (element > current.element) {
-                if (current.right == null) {
-                    current.right = new Node(element);
-                    break;
-                }
-                else current = current.right;
+                parent = current;
+                current = current.right;
+            }
+            else {
+                return false;
             }
         }
+        if (element < parent.element) {
+            parent.left = new Node(element);
+        }
+        else if (element > parent.element) {
+            parent.right = new Node(element);
+        }
     }
+    return true;
 }
 
 function search(element) {
