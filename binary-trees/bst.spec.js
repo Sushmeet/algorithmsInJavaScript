@@ -2,7 +2,7 @@
 
 var BST = require('./BST.js');
 
-describe("Binary Search Tree",function() {
+describe("Binary Search Tree", function () {
 
     var sushTree;
 
@@ -10,7 +10,7 @@ describe("Binary Search Tree",function() {
         sushTree = new BST();
     });
 
-    it('should be created,left and right are null,element is null.', function () {
+    it('should be created, left and right children are null, element is null.', function () {
         expect(sushTree.root).toEqual(null);
         spyOn(sushTree, "insert");
         spyOn(sushTree, "search");
@@ -20,11 +20,11 @@ describe("Binary Search Tree",function() {
         expect(sushTree.search).toHaveBeenCalled();
 
     });
-    it('should use insert root element.',function () {
+    it('should insert root element.', function () {
         sushTree.insert(5);
         expect(sushTree.search(5)).toBeTruthy();
     })
-    it('should use insert multiple elements.',function () {
+    it('should insert multiple elements.', function () {
         sushTree.insert(20);
         sushTree.insert(5);
         sushTree.insert(4);

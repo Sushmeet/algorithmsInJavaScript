@@ -60,4 +60,5 @@ function search(element) {
     return false;
 }
 
+
 module.exports = BST;
